@@ -1,0 +1,439 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 3rem;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Práce na navbaru - začátek */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+  margin: 0 auto;
+}
+nav {
+  background-color: #33292a;
+  height: 53px;
+  text-align: end;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+ul li a {
+  color: #fff;
+}
+ul li {
+  margin: 17px;
+}
+ul li:hover {
+  opacity: 0.7;
+}
+nav img {
+  height: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  nav img {
+    display: none;
+  }
+}
+/* Práce na navbaru - konec */
+
+/* Práce na header-image - začátek */
+
+.header-image {
+  background-image: url("/images/Tent.jpg");
+  background-size: cover;
+  height: 700px;
+  background-position: center;
+  /* position: relative; */
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+.header-text {
+  margin-bottom: 55px;
+  margin-right: 40px;
+}
+.header-text div {
+  color: white;
+  text-align: right;
+  font-size: 45px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-image {
+    background-color: black;
+    height: 700px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+
+  .header-text {
+    margin-bottom: 55px;
+    margin-right: 0px;
+  }
+  .header-text div {
+    color: white;
+    text-align: right;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 55px;
+  }
+}
+
+/* Práce na header-image - konec */
+
+/* Práce na první sekci - začátek */
+.about-us-section {
+  margin: 30px 40px;
+}
+.about-us-section-text {
+  margin-bottom: 30px;
+}
+.about-us-section-text h1 {
+  margin-bottom: 20px;
+}
+.about-us-section-image img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 768px) {
+  .about-us-section {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .about-us-section-text {
+    font-size: 15px;
+    margin: 20px 20px 0 0;
+    height: 400px;
+    width: 100%;
+  }
+  .about-us-section-image {
+    background-image: url("/images/field.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 590px;
+    width: 100%;
+    height: 600px;
+  }
+  .about-us-section-image img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 890px) {
+  .about-us-section-text {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .about-us-section-text {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-us-section-text {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .about-us-section-text {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .about-us-section-text {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .about-us-section-text {
+    font-size: 21px;
+  }
+}
+/* Práce na první sekci - konec */
+
+/* Práce na druhé sekci - začátek */
+.what-we-do-section {
+  background-color: #33292a;
+}
+.what-we-do-section-text {
+  padding: 30px 40px;
+  text-align: center;
+  color: #fff;
+}
+.what-we-do-section-text h1 {
+  padding-bottom: 20px;
+}
+.icon-wrapper {
+  color: #fff;
+  text-align: center;
+}
+.icon-wrapper img {
+  width: 50px;
+}
+.icon {
+  padding: 25px;
+}
+@media only screen and (min-width: 768px) {
+  .icon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    padding: 60px 0;
+  }
+  .what-we-do-section-text {
+    padding: 50px 0px;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .icon {
+    padding: 30px 0;
+  }
+}
+/* Práce na druhé sekci - konec */
+
+/* Práce na třetí sekci - začátek */
+.our-tips-section {
+  margin: 70px 25px;
+}
+.our-tips-section img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.tips-text {
+  position: relative;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  height: 80px;
+}
+.tips-text span {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 768px) {
+  .our-tips-section {
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+      "one two three"
+      "four five six"
+      "seven eight nine";
+    margin: 50px auto;
+    width: 70%;
+  }
+  .grid-image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+  .tips-text {
+    grid-area: five;
+  }
+  .six {
+    grid-area: six;
+  }
+  .seven {
+    grid-area: seven;
+  }
+  .eight {
+    grid-area: eight;
+  }
+  .nine {
+    grid-area: nine;
+  }
+  .our-tips span {
+    font-size: 18px;
+  }
+}
+/* Práce na třetí lekci - konec */
+
+/* Práce na čtvrté sekci - začátek */
+.where-to-go-section {
+  background-color: #644b4f;
+}
+.where-to-go-section-text {
+  padding: 60px 40px;
+  text-align: left;
+  color: #fff;
+}
+.where-to-go-section-text h1 {
+  padding-bottom: 20px;
+  font-size: 32px;
+}
+.where-to-go-section-text p {
+  padding-bottom: 45px;
+}
+.where-to-go-section button {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .where-to-go-section-text {
+    display: flex;
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .left-side h1 {
+    width: 55%;
+    font-size: 24px;
+  }
+  .right-side {
+    width: 80%;
+  }
+}
+/* Práce na čtvrté sekci - konec */
+
+/* Práce na páté sekci - začátek */
+.reviews-section {
+  text-align: center;
+  margin: 60px 40px;
+}
+.rounded-picture {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  object-position: 45%;
+  border-radius: 50%;
+}
+.reviews {
+  margin-bottom: 55px;
+}
+.reviews h1 {
+  padding-bottom: 20px;
+}
+.bertie-norton {
+  padding-bottom: 55px;
+}
+.bertie-norton img {
+  margin: 20px;
+}
+.bertie-norton p {
+  padding-bottom: 20px;
+}
+.frank-kinney img {
+  margin: 20px;
+}
+.frank-kinney p {
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-section {
+    margin: 100px auto;
+    width: 70%;
+  }
+  .reviews {
+    margin: 0 auto;
+    width: 450px;
+    height: 125px;
+  }
+  .bertie-frank-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    height: 490px;
+  }
+  .bertie-norton,
+  .frank-kinney {
+    max-width: 450px;
+    max-height: 300px;
+    flex: 1;
+  }
+}
+/* Práce na páté sekci - konec */
+
+/* Práce na šesté sekci - začátek */
+.photo-galery-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-galery-section img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .photo-galery-section {
+    display: grid;
+    grid-template-areas:
+      "sea daybreak"
+      "cottage forest";
+  }
+  .sea {
+    grid-area: sea;
+  }
+  .daybreak {
+    grid-area: daybreak;
+  }
+  .cottage {
+    grid-area: cottage;
+  }
+  .forest {
+    grid-area: forest;
+  }
+}
+
+/* Práce na šesté lekci - konec */
+
+/* Práce na sedmé sekci - začátek */
+footer {
+  background-color: #333333;
+  height: 80px;
+  text-align: center;
+  padding: 16px 0;
+}
+.footer-section-text p {
+  font-size: 10px;
+  color: #fff;
+  margin-top: 5px;
+}
+.footer-section-text span a {
+  color: #efa69d;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+/* Práce na sedmé sekci - konec */
